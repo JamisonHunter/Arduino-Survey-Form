@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Arduino Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <h1 id="title">Arduino Survey</h1>
+        <p id="description">This survey is here to discover how users take advantage of the Arduino for their projects.</p>
+        <div class="overcontainer">
+            <form id="survey-form">
+
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name." required/>
+
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" pattern=".+@example\.com" placeholder="example@domain.com" required/>
+
+            <label for="number" id="number-label">Age (Optional)</label>
+            <input id="number" type="number" placeholder="Enter your age." min="1" max="200" />
+
+            <label>I am an Arduino...</label>
+
+            <label for="hobbyist">Hobbyist
+                <input type="radio" id="hobbyist" name="work_type" value="hobbyist">
+            </label>
+
+            <label for="professional">Professional
+                <input type="radio" id="professional" name="work_type" value="professional">
+            </label>
+
+            <label>What is your level of expertise?</label>
+
+            <select id="dropdown">
+                <option name="beginner">Beginner</option>
+                <option name="intermediate">Intermediate</option>
+                <option name="Advanced">Advanced</option>
+            </select>
+
+            <label>Which Arduino types do you use?</label>
+
+            <label for="arduino-uno-r3">Arduino Uno R3
+                <input id="arduino-uno-r3" type="checkbox" value="arduino-uno-r3">
+            </label>
+
+            <label for="arduino-nano">Arduino Nano
+                <input id="arduino-nano" type="checkbox" value="arduino-nano">
+            </label>
+
+            <label for="arduino-micro">Arduino Micro
+                <input id="arduino-micro" type="checkbox" value="arduino-micro">
+            </label>
+
+            <label for="arduino-mega">Arduino Mega
+                <input id="arduino-mega" type="checkbox" value="arduino-mega">
+            </label>
+
+            <label for="arduino-giga">Arduino Giga
+                <input id="arduino-giga" type="checkbox" value="arduino-giga">
+            </label>
+
+            <label for="other">Other
+                <input id="other" type="checkbox" value="other">
+            </label>
+
+            <label>Describe your use cases for Arduino.</label>
+
+            <textarea></textarea>
+
+            <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

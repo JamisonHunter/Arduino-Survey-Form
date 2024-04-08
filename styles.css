@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://imgs.search.brave.com/3Lw5zFU1KgioFAc9FAGd7Uom7J_BzhdZnhMJ0Mllm3g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zb2Z0d2FyZS1k/ZXZlbG9wZXItcHJv/Z3JhbW1pbmctYWJz/dHJhY3QtY29tcHV0/ZXItc2NyaXB0LWNv/ZGVfMTExMTIwOS03/NzUzLmpwZz9zaXpl/PTYyNiZleHQ9anBn'); /* Replace 'background-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-weight: bold;
+}
+
+
+#description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.overcontainer {
+  border: 2px solid teal;
+  width: 80%; 
+  max-width: 500px; 
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9); 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 0 auto; 
+}
+
+
+#survey-form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+}
